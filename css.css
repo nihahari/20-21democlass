@@ -1,0 +1,56 @@
+body{
+	background-color: pink;
+	color: wheat;
+}
+.flexpropertiescontainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: solid;
+	justify-content: space-around;
+}
+.flexpropertiescontainer div{
+	width:29%;
+	background-color:white;
+	color:black;
+	margin:1%;
+	text-align:center;
+	padding:1%;
+}
+.flexpropertiescontainer div img{
+	width:50%;
+	height:250px;
+	opacity: 0.5;
+}
+.flexpropertiescontainer div button{
+	border: none;
+	width:150px;
+	height: 50px;
+	background-color: blue;
+	border-radius: 10px;
+	color: white;
+}
+
+.flexpropertiescontainer div img:hover{
+	transition: all 2s ease;
+	opacity: 1;
+	width: 40%;
+	height: 230px;
+}
+@media only screen and (min-width:320px) and (max-width: 767px){
+	.flexpropertiescontainer{
+		flex-direction: column;
+			
+	}
+	.flexpropertiescontainer div{
+	width: 95%;
+}
+}
+@media only screen and (min-width:768px) and (max-width: 1023px){
+	body{
+		background-color: white;
+	}
+	.flexpropertiescontainer div{
+		width: 40%;
+	}
+}
